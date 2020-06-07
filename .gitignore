@@ -5,6 +5,7 @@ __pycache__/
 
 #Data and models
 data/
+data*
 models/
 
 # C extensions
