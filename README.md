@@ -36,7 +36,7 @@ Installing the software you need to train deep learning models can be difficult.
 
 
 ## 3. The Data
-In this workshop, we'll be working with the [MVTech AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/) dataset. This is a terrific computer vision dataset, focused on anomaly detection in manfuacturing. 
+In this workshop, we'll be working with the [MVTech AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/) dataset. This is a terrific computer vision dataset, focused on anomaly detection in manfuacturing. The dataset is primarily intended for unsupervised anomaly detection, but can be used in supervised deep learning appraoches as well. 
 
 ![](graphics/mvtech_overview.png)
 
