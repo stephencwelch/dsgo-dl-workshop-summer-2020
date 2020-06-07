@@ -6,7 +6,7 @@
 1. Welcome!
 2. Setting up your computing environment
 3. Introduction to our dataset for the day - [MVTech AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/) 
-4. Getting image classification results fastai with [fastai](https://docs.fast.ai/). 
+4. Getting image classification results fast with [fastai](https://docs.fast.ai/). 
 5. Detection, segmentation, and unsupervised learning. 
 6. Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask). 
 7. Reflection on studying and working in AI in 2020
@@ -41,3 +41,15 @@ In this workshop, we'll be working with the [MVTech AD](https://www.mvtec.com/co
 ![](graphics/mvtech_overview.png)
 
 
+The mvtech data is highly representative of the types of real deep-learning problems we see in the wild, and includes high quality ground-truth pixel-level annotations. 
+
+![](graphics/leather.png)
+
+
+## 4. Getting image classification results fast with fastai
+
+
+## 6. Deploying models with docker and flask
+
+
+## 7. Reflection on studying and working in AI in 2020
