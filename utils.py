@@ -14,4 +14,4 @@ def get_mvtech_dataset(data_dir, dataset_name):
         tar=tarfile.open(data_dir/('%s.tar.xz'%dataset_name))
         tar.extractall(data_dir)
         tar.close()
-        os.chmod(data_dir/dataset_name, 0o777) #May need to change permissions
+
