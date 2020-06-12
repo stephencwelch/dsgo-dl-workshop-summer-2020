@@ -14,7 +14,7 @@
 ## 1. Welcome!
 
 ### 1.1 Goal for Our Time Together
-**Train and deploy a production-grade deep learning computer vision model, and have some fun along the way :)**
+**Train and deploy  deep learning computer vision models, and have some fun along the way :)**
 
 ## 2. Setting up your computing environment
 Installing the software you need to train deep learning models can be difficult. For the purposes of this workshop, we're offering 3 recommended methods of setting up your computing environment. Your level of experience and access to machines, should help you determine which appraoch is right for you. 
