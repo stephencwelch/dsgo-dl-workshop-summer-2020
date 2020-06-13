@@ -3,12 +3,12 @@
 ![](graphics/workshop_lander.gif)
 
 ## Agenda
-|   | Session | Approximate Start Time | Resources | 
+|   | Session | Approximate Start Time (PST) | Resources | 
 | - | --------| ---------------------- | --------- |
 | 1 | Welcome!| 1:00 | | 
 | 2 | Setting up your computing environment | 1:05 | | 
 | 3 | Storytime - the summer project that took 50 years | 1:15 | | 
-| 4 | Getting image classification results fast with [fastai](https://docs.fast.ai/) | 1:25 | |
+| 4 | Getting image classification results fast with [fastai](https://docs.fast.ai/) | 1:25 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/01-image-classification-with-fastai.ipynb) |
 | 5 | Bounding box detection | 1:50 | | 
 | 5 | Break | 2:10 | | 
 | 6 | Semantic segmentation | 2:20 | |
