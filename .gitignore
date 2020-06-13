@@ -7,6 +7,7 @@ __pycache__/
 data/
 data*
 models/
+*.tmp
 
 # C extensions
 *.so
