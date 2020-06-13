@@ -8,6 +8,7 @@ data/
 data*
 models/
 *.tmp
+*.pkl
 
 # C extensions
 *.so

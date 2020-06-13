@@ -11,3 +11,4 @@ starlette==0.12.0
 uvicorn==0.7.1
 jupyter
 matplotlib
+gdown

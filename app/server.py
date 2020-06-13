@@ -1,6 +1,6 @@
-import aiohttp
 import asyncio
 import uvicorn
+import gdown
 from fastai import *
 from fastai.vision import *
 from io import BytesIO
@@ -9,7 +9,7 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://drive.google.com/file/d/1JyjIpXsvWTWY2mvJz5LDNJ6UCgFp5-ME/view?usp=sharing'
+export_file_url = 'https://drive.google.com/uc?id=1JyjIpXsvWTWY2mvJz5LDNJ6UCgFp5-ME'
 export_file_name = 'bbc-classifier.pkl'
 
 classes = ['ball', 'brick', 'cylinder']
@@ -19,16 +19,13 @@ app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
 app.mount('/static', StaticFiles(directory='app/static'))
 
-async def download_file(url, dest):
+def download_file(url, dest):
     if dest.exists(): return
-    async with aiohttp.ClientSession() as session:
-        async with session.get(url) as response:
-            data = await response.read()
-            with open(dest, 'wb') as f:
-                f.write(data)
+    gdown.download(url, str(dest), quiet=False)
+
 
 async def setup_learner():
-    await download_file(export_file_url, path / export_file_name)
+    download_file(export_file_url, path / export_file_name)
     try:
         learn = load_learner(path, export_file_name)
         return learn
