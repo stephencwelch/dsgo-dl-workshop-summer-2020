@@ -8,10 +8,10 @@
 | 1 | Welcome!| 1:00 | | 
 | 2 | Setting up your computing environment | 1:05 | | 
 | 3 | Storytime - the summer project that took 50 years | 1:15 | | 
-| 4 | Getting image classification results fast with [fastai](https://docs.fast.ai/) | 1:25 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/01-image-classification-with-fastai.ipynb) |
-| 5 | Bounding box detection | 1:50 | | 
+| 4 | Getting image classification results fast with [fastai](https://docs.fast.ai/) | 1:25 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/01-image-classification-with-fastai.ipynb) |
+| 5 | Bounding box detection | 1:50 |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/02-bounding-box-detection.ipynbb)| 
 | 5 | Break | 2:10 | | 
-| 6 | Semantic segmentation | 2:20 | |
+| 6 | Semantic segmentation | 2:20 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/03-semantic-segmentation.ipynb)|
 | 7 | Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask) | 2:40 | | 
 | 8 | Q&A | 3:10 | |
 | 9 | (Optional, if time) Deep dive into alexnext, GANs | | | 
