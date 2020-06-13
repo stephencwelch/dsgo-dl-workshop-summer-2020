@@ -3,14 +3,19 @@
 ![](graphics/workshop_lander.gif)
 
 ## Agenda
-1. Welcome!
-2. Setting up your computing environment
-3. Storytime - the summer project that took 50 years 
-4. Getting image classification results fast with [fastai](https://docs.fast.ai/)
-5. Bounding box detection
-6. Semantic segmentation
-7. Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask)
-8. Reflection on studying and working in AI in 2020
+|   | Session | Approximate Start Time | Resources | 
+| - | --------| ---------------------- | --------- |
+| 1 | Welcome!| 1:00 | | 
+| 2 | Setting up your computing environment | 1:05 | | 
+| 3 | Storytime - the summer project that took 50 years | 1:15 | | 
+| 4 | Getting image classification results fast with [fastai](https://docs.fast.ai/) | 1:25 | |
+| 5 | Bounding box detection | 1:50 | | 
+| 5 | Break | 2:10 | | 
+| 6 | Semantic segmentation | 2:20 | |
+| 7 | Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask) | 2:40 | | 
+| 8 | Q&A | 3:10 | |
+| 9 | (Optional, if time) Deep dive into alexnext, GANs | | | 
+| 10 | (Optional, if time) Reflection on studying and working in AI in 2020 | | |
 
 ## 1. Welcome!
 
