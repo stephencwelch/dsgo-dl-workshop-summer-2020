@@ -145,4 +145,5 @@ dmypy.json
 
 #Mac Os
 *.DS_Store
+__MACOSX
 /bloomrpc/*
