@@ -5,16 +5,17 @@
 ## Agenda
 1. Welcome!
 2. Setting up your computing environment
-3. Introduction to our dataset for the day - [MVTech AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/) 
-4. Getting image classification results fast with [fastai](https://docs.fast.ai/). 
-5. Detection, segmentation, and unsupervised learning. 
-6. Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask). 
-7. Reflection on studying and working in AI in 2020
+3. Storytime - the summer project that took 50 years to finish & what makes computer vision hard
+4. Getting image classification results fast with [fastai](https://docs.fast.ai/)
+5. Bounding box detection
+6. Semantic segmentation
+7. Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask)
+8. Reflection on studying and working in AI in 2020
 
 ## 1. Welcome!
 
 ### 1.1 Goal for Our Time Together
-**Train and deploy  deep learning computer vision models, and have some fun along the way :)**
+**Train and deploy deep learning computer vision models, and have some fun along the way :)**
 
 ## 2. Setting up your computing environment
 Installing the software you need to train deep learning models can be difficult. For the purposes of this workshop, we're offering 3 recommended methods of setting up your computing environment. Your level of experience and access to machines, should help you determine which appraoch is right for you. 
@@ -35,16 +36,20 @@ Installing the software you need to train deep learning models can be difficult.
 ### 2.3 Setup on Your Own GPU Machine Running Linux
 
 
-## 3. The Data
-In this workshop, we'll be working with the [MVTech AD](https://www.mvtec.com/company/research/datasets/mvtec-ad/) dataset. This is a terrific computer vision dataset, focused on anomaly detection in manfuacturing. The dataset is primarily intended for unsupervised anomaly detection, but can be used in supervised deep learning appraoches as well. 
+## 3. Storytime - the summer project that took 50 years to finish & what makes computer vision hard
 
-![](graphics/mvtech_overview.png)
+![](graphics/original_mit_crew-01.png)
+
+**Computer Vision** has a very interesting history. It's roots really go all the way back to the beginning of computing and **Artifical Intelligence.** In these early days, it was unknown just how easy or difficult it would be to recreate the function of the human visual system. A great example of this is the 1966 MIT Summer Vision Project. Marvin Minsky and Seymour Papert, co-directors of the MIT AI Labratory, begun the summer with some ambitious goals:
+
+![](graphics/summer_project_abstract-01.png)
 
 
-The mvtech data is highly representative of the types of real deep-learning problems we see in the wild, and includes high quality ground-truth pixel-level annotations. 
+Minsky and Papert assigned Gerald Sussman, an MIT undergraduate studunt as project lead, and setup specific goals for the group around recognizing specific objects in images, and seperating these objects from their backgrounds. 
 
-![](graphics/leather.png)
+![](graphics/summer_project_goals-01.png)
 
+Just how hard is it to acheive the goals Minsky and Papert laid out? How has the field of computer vision advance since that summer? Are these tasks trivial now, 50+ years later? Do we understand how the human visual system works? Just how hard *is* computer vision and how far have we come?
 
 ## 4. Getting image classification results fast with fastai
 
