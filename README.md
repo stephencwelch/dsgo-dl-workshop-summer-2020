@@ -82,7 +82,7 @@ So as we dive into building and training our own deep learning models, just reme
 ### 3.4 Our dataset for the day
 To solve the original computer vision problem using an emprical appraoch, we're going to need some data. We'll be using a fun little dataset called bbc1k. This dataset was collected in the spirit of the original MIT summer project, and contains 1000 images of bricks, balls, and cylinders against cluttered backgrounds. 
 
-![](../graphics/bbc1k.gif)
+![](graphics/bbc1k.gif)
 
 You can download the dataset [here](http://www.welchlabs.io/unccv/deep_learning/bbc_train.zip), or with the download script in the util directory of this repo:
 
@@ -90,13 +90,9 @@ You can download the dataset [here](http://www.welchlabs.io/unccv/deep_learning/
 python util/get_and_unpack.py -url http://www.welchlabs.io/unccv/deep_learning/bbc_train.zip
 ```
 
-![](../graphics/bbc_sample.jpg)
+![](graphics/bbc_sample.jpg)
 
-
- BBC-1k dataset includes ~1000 images ncluding classification, bounding box, and segmentation labels mportantly, each image only contains one brick, ball or cylinder.
-
-
-
+ BBC-1k dataset includes ~1000 images including classification, bounding box, and segmentation labels. Importantly, each image only contains one brick, ball or cylinder.
 
 ### 3.5 Further Reading & Viewing
 - [Computer Vision Course at UNCC](https://github.com/unccv/uncc_course_overview)
