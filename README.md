@@ -67,21 +67,20 @@ Now, as you may know, it’s taken longer than we thought, but we have made some
 
 In fact, in today's workshop, **we'll achieve exactly what Minsky and Papert set out to do.** And what I think makes this *really* interesting, is that just 10 years ago, this really would not have been possible. You see, it really took around 50 years to achieve the goals of the MIT summer project. 
 
-Now, just becuase it took 50 years to acheive these goals, this does not mean that we should only pay attention to recent breakthroughs. Computer vision has a rich and detailed history that deeply informs that work we see today. One aspect that we would be remiss if we didn't breifly discuss is the tradeoff between **Analytical and Empirical Techniques**.
+Now, just becuase it took 50 years to acheive these goals, this does not mean that we should only pay attention to recent breakthroughs. Computer vision has a rich and detailed history that deeply informs that work we see today. One aspect that we would be remiss if we didn't breifly discuss is the tradeoff between **analytical and empirical techniques**.
 
 ### Part of an analytical pipeline for recognizing a brick
 
 ![](graphics/hough_pipeline_short.gif)
 
+Throughout the history of computer vision (and computation and philosophy), we've seen a natural oscillation and competition between techniques that are grounded in reason (analytical), and techniques that are grounding in observation or data. Today we live in a time that is very much dominated by empricism. Decisions must be data driven. In machine learning and computer vision, we see huge breakthroughs from emprical techniques that learn from data, such as deep learning. 
 
-So, how did we get here, how do these systems actually work, and what’s next? What does it mean that we can build really good systems for certain tasks? What problems have these systems solved and what new problems are new advances enabling?
-
-In today's workshop we'll focus on recent deep learning techniques, but if your interested
-
-
+So as we dive into building and training our own deep learning models, just remember that this is only one approach. We've seen huge performance increases from empirical approaches recently, and that's what we'll be spending our time on here. 
 
 ### Further Reading & Viewing
-
+- [Computer Vision Course at UNCC](https://github.com/unccv/uncc_course_overview)
+- [Learning to See](https://www.youtube.com/watch?v=i8D90DkCLhI)
+- [Great Book on the History of AI](https://www.amazon.com/Ai-Tumultuous-History-Artificial-Intelligence/dp/0465029973)
 
 ## 4. Getting image classification results fast with fastai
 
