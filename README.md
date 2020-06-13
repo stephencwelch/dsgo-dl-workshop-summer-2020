@@ -5,7 +5,7 @@
 ## Agenda
 1. Welcome!
 2. Setting up your computing environment
-3. Storytime - the summer project that took 50 years to finish & what makes computer vision hard
+3. Storytime - the summer project that took 50 years 
 4. Getting image classification results fast with [fastai](https://docs.fast.ai/)
 5. Bounding box detection
 6. Semantic segmentation
@@ -36,7 +36,7 @@ Installing the software you need to train deep learning models can be difficult.
 ### 2.3 Setup on Your Own GPU Machine Running Linux
 
 
-## 3. Storytime - the summer project that took 50 years to finish & what makes computer vision hard
+## 3. Storytime - the summer project that took 50 years
 
 ![](graphics/original_mit_crew-01.png)
 
@@ -50,6 +50,38 @@ Minsky and Papert assigned Gerald Sussman, an MIT undergraduate studunt as proje
 ![](graphics/summer_project_goals-01.png)
 
 Just how hard is it to acheive the goals Minsky and Papert laid out? How has the field of computer vision advance since that summer? Are these tasks trivial now, 50+ years later? Do we understand how the human visual system works? Just how hard *is* computer vision and how far have we come?
+
+---
+
+Interestingly, comptuer vision  turns out to be significantly harder than people first expected. Part of the challenge here is that vision, like other processes that involve the brain, can be a bit hard to pin down. 
+
+What exactly does it mean to see? To have vision?
+
+You’re probably using your own vision system right now to read these words, but if I asked you to break down piece by piece how exactly your brain is processing the light that hits your retina into meaningful information, you would have a really tough time. 
+
+The vision researchers Peter Hart and Richard Duda had a really nice way of putting this when they wrote one of the first [computer vision books](https://www.amazon.com/Pattern-Classification-Scene-Analysis-Richard/dp/0471223611): 
+
+> "Paradoxically, we are all expert at perception, but none of us knows much about it."
+
+Now, as you may know, it’s taken longer than we thought, but we have made some good progress in computer vision. Today, the computer vision systems we’ve built are even better than humans at certain tasks. 
+
+In fact, in today's workshop, **we'll achieve exactly what Minsky and Papert set out to do.** And what I think makes this *really* interesting, is that just 10 years ago, this really would not have been possible. You see, it really took around 50 years to achieve the goals of the MIT summer project. 
+
+Now, just becuase it took 50 years to acheive these goals, this does not mean that we should only pay attention to recent breakthroughs. Computer vision has a rich and detailed history that deeply informs that work we see today. One aspect that we would be remiss if we didn't breifly discuss is the tradeoff between **Analytical and Empirical Techniques**.
+
+### Part of an analytical pipeline for recognizing a brick
+
+![](graphics/hough_pipeline_short.gif)
+
+
+So, how did we get here, how do these systems actually work, and what’s next? What does it mean that we can build really good systems for certain tasks? What problems have these systems solved and what new problems are new advances enabling?
+
+In today's workshop we'll focus on recent deep learning techniques, but if your interested
+
+
+
+### Further Reading & Viewing
+
 
 ## 4. Getting image classification results fast with fastai
 
