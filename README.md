@@ -14,8 +14,9 @@
 | 6 | Semantic segmentation | 2:20 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/03-semantic-segmentation.ipynb)|
 | 7 | Deploying models with [docker](https://github.com/moby/moby) and [render](http://render.com) | 2:40 | | 
 | 8 | Q&A | 3:10 | |
-| 9 | (Optional, if time) Deep dive into alexnext, GANs | | | 
-| 10 | (Optional, if time) Reflection on studying and working in AI in 2020 | | |
+| 9 | (Optional, if time) Deep dive into AlexNet | | | 
+| 10 | (Optional, if time) Deep dive into GANs | | | 
+| 11 | (Optional, if time) Reflection on studying and working in AI in 2020 | | |
 
 ## 1. Welcome!
 
@@ -138,14 +139,18 @@ jupyter notebook
 ```
 
 ## 7. Deploying models with docker and render
-Alright, enough training, let's get something into production!
+Alright, enough training, let's get something into production! We'll be borrowing some deployment code from [fastai](https://course.fast.ai/deployment_render.html), and deploying our model as a web service using docker and [render](https://render.com/).
 
-If you haven't yet cloned this respoistory, please
+7.1 On the github website, create a fork of this repository. We'll be directly integrating render with github to pull in the code for deployment. 
+7.2 (Optional) Clone your forked repository to your machine.
+7.3 We'll be deploying the brick/ball/cylinder classifier we trained earlier. You'll need to point your web server at the correct url to downlaod the model you trained. To do this, you'll modify `export_file_url` in `app/server.py`.
 
 
 ```
 python app/server.py serve
 ```
+
+http://0.0.0.0:5000
 
 ```
 docker build -t bbc-classifier .
@@ -155,4 +160,3 @@ docker build -t bbc-classifier .
 docker run --rm -it -p 5000:5000 bbc-classifier
 ```
 
-## 7. Reflection on studying and working in AI in 2020
