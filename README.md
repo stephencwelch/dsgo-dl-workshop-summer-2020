@@ -109,5 +109,16 @@ python util/get_and_unpack.py -url http://www.welchlabs.io/unccv/deep_learning/b
 
 ## 6. Deploying models with docker and flask
 
+```
+python app/server.py serve
+```
+
+```
+docker build -t bbc-classifier .
+```
+
+```
+docker run --rm -it -p 5000:5000 bbc-classifier
+```
 
 ## 7. Reflection on studying and working in AI in 2020
