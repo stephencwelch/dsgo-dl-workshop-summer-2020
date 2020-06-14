@@ -14,8 +14,8 @@
 | 6 | Semantic segmentation | 2:20 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/03-semantic-segmentation.ipynb)|
 | 7 | Deploying models with [docker](https://github.com/moby/moby) and [render](http://render.com) | 2:40 | | 
 | 8 | Q&A | 3:10 | |
-| 10 | (Optional, if time) GANs | | | 
-| 11 | (Optional, if time) Reflection on studying and working in AI in 2020 | | |
+| 10 | (Optional, if time) GANs | | [Big ole notebook](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/04-generative-adversarial-networks.ipynb) | 
+| 11 | (Optional, if time) Reflection on studying and working in AI in 2020 | | [pdf](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/reflection-on-studying-and-working-in-ml.pdf)|
 
 ## 1. Welcome!
 
