@@ -27,9 +27,9 @@ Installing the software you need to train deep learning models can be difficult.
 
 | | Option | Pros | Cons | Cost | Instructions | 
 | - | ------ | ---- | ---- | ---- | ------------ | 
-| 1 | Google Colab | Virtually no setup required, start coding right away! | GPUs not always available, limited session times, limited RAM | Free! There's also a paid tier at [$10/month](https://colab.research.google.com/signup) | [Colab Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#1-setup-google-colab) |
-| 2 | Your Own Linux GPU Machine | No recurring cost, complete control over hardware. | High up-front cost, takes time to configure. | $1000+ fixed up front cost | [Linux Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#2-setup-on-your-own-gpu-machine-running-linux) |
-| 3 | Virtual Machine | Highly configurable & flexible, pay for the performance level you need | Can be difficult to configure, only terminal-based interface | Starts ~$1/hour | [VM Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#3-setup-a-virtual-machine) |
+| 1 | Google Colab | Virtually no setup required, start coding right away! | GPUs not always available, limited session times, limited RAM | Free! There's also a paid tier at [$10/month](https://colab.research.google.com/signup) | [Colab Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#21-setup-google-colab) |
+| 2 | Your Own Linux GPU Machine | No recurring cost, complete control over hardware. | High up-front cost, takes time to configure. | $1000+ fixed up front cost | [Linux Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#22-setup-on-your-own-gpu-machine-running-linux) |
+| 3 | Virtual Machine | Highly configurable & flexible, pay for the performance level you need | Can be difficult to configure, only terminal-based interface | Starts ~$1/hour | [VM Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#23-setup-a-virtual-machine) |
 
 ### 2.1 Setup Google Colab
 Google colab is delightfully easy to setup. All you really need to is a google account. Clicking one of the "Open in Colab" links above should take you directly to that notebook in google colab, ready to run. The only configuration change you'll be required to make is **changing your runtime type**. Simply click the runtime menu dropdown at the top of your notebook, select "change runtime type", and select "GPU" as your hardware accelerator. 
