@@ -142,19 +142,27 @@ jupyter notebook
 Alright, enough training, let's get something into production! We'll be borrowing some deployment code from [fastai](https://course.fast.ai/deployment_render.html), and deploying our model as a web service using docker and [render](https://render.com/).
 
 7.1 On the github website, create a fork of this repository. We'll be directly integrating render with github to pull in the code for deployment. 
+
 7.2 (Optional) Clone your forked repository to your machine.
-7.3 We'll be deploying the brick/ball/cylinder classifier we trained earlier. You'll need to point your web server at the correct url to downlaod the model you trained. To do this, you'll modify `export_file_url` in `app/server.py`.
 
+7.3 We'll be deploying the brick/ball/cylinder classifier we trained earlier. You'll need to point your web server at the correct url to downlaod the model you trained. To do this, you'll modify `export_file_url` in `app/server.py`. The application is setup to pull from google drive, so if you ran the classification notebook from google colab, you should be all set. If you ran in a VM or locally, you may need to manuall upload your model weights `.pkl` file to google drive. Once you've done that, you'll need to create a share-able link to the file in the google drive web app, and modify the permissions to allow anyone with the link to view the file. You can then modiry `export_file_url` in `app/server.py`. **Warning** to not completely overwrite `export_file_url` with your copied link. Instead, only replace the id portion with the id from the share-able link. You id should start after file/d/ and end before /view in your link. 
 
+7.4 (Optional) If you cloned your repository locally, you can test your web-service locally by running:
 ```
+cd dsgo-dl-workshop-summer-2020
 python app/server.py serve
 ```
+and navigating your browser to: `http://0.0.0.0:5000`. If your app is working correctly, you should see a website like the one shown below. You can upload an image (there's some example images in /graphics), and analyze it!
 
-http://0.0.0.0:5000
+![](graphics/web-app-screenshot.png)
+
+7.5 (Optional) If you cloned your repository locally, you can also build the docker container that render will use to deploy your aplication. I find that testing docker containers locally can be really helpful to smoke our potentially issues before you get to close to production. If you have docker installed, you can build the container with `docker build`: 
 
 ```
+cd dsgo-dl-workshop-summer-2020
 docker build -t bbc-classifier .
 ```
+
 
 ```
 docker run --rm -it -p 5000:5000 bbc-classifier
