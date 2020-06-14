@@ -156,15 +156,19 @@ and navigating your browser to: `http://0.0.0.0:5000`. If your app is working co
 
 ![](graphics/web-app-screenshot.png)
 
-7.5 (Optional) If you cloned your repository locally, you can also build the docker container that render will use to deploy your aplication. I find that testing docker containers locally can be really helpful to smoke our potentially issues before you get to close to production. If you have docker installed, you can build the container with `docker build`: 
+7.5 (Optional) If you cloned your repository locally, you can also build the docker container that render will use to deploy your aplication. I find that testing docker containers locally can be really helpful to smoke our potentially issues before you get to close to production. If you have docker installed, build the container with `docker build`: 
 
 ```
 cd dsgo-dl-workshop-summer-2020
 docker build -t bbc-classifier .
 ```
 
-
+Run the container with:
 ```
 docker run --rm -it -p 5000:5000 bbc-classifier
 ```
+Navigating your browser to: `http://0.0.0.0:5000`, and see if your app is working!
 
+7.6 Deploy on render. Setup a render account (no credit card required). Create a new web service, and point it at your forked repository. Watch the logs as your container builds - so cool! Once your build is complete, point your browser to `https://YOUR_APP_NAME.onrender.com/`. If eveything is working properly, you should have a deep learning inference app ready to go!
+
+![](graphics/render-example.png)
