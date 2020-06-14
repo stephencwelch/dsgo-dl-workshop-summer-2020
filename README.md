@@ -12,7 +12,7 @@
 | 5 | Bounding box detection | 1:50 |[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/02-bounding-box-detection.ipynb)| 
 | 5 | Break | 2:10 | | 
 | 6 | Semantic segmentation | 2:20 | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephencwelch/dsgo-dl-workshop-summer-2020/blob/master/03-semantic-segmentation.ipynb)|
-| 7 | Deploying models with [docker](https://github.com/moby/moby) and [flask](https://github.com/pallets/flask) | 2:40 | | 
+| 7 | Deploying models with [docker](https://github.com/moby/moby) and [render](http://render.com) | 2:40 | | 
 | 8 | Q&A | 3:10 | |
 | 9 | (Optional, if time) Deep dive into alexnext, GANs | | | 
 | 10 | (Optional, if time) Reflection on studying and working in AI in 2020 | | |
@@ -20,7 +20,7 @@
 ## 1. Welcome!
 
 ### 1.1 Goal for Our Time Together
-**Train and deploy deep learning computer vision models, and have some fun along the way :)**
+Train and deploy deep learning computer vision models, and have some fun along the way :)
 
 ## 2. Setting up your computing environment
 Installing the software you need to train deep learning models can be difficult. For the purposes of this workshop, we're offering 3 recommended methods of setting up your computing environment. Your level of experience and access to machines, should help you determine which appraoch is right for you. 
@@ -28,17 +28,42 @@ Installing the software you need to train deep learning models can be difficult.
 | | Option | Pros | Cons | Cost | Instructions | 
 | - | ------ | ---- | ---- | ---- | ------------ | 
 | 1 | Google Colab | Virtually no setup required, start coding right away! | GPUs not always available, limited session times, limited RAM | Free! There's also a paid tier at [$10/month](https://colab.research.google.com/signup) | [Colab Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#1-setup-google-colab) |
-| 2 | Virtual Machine | Highly configurable & flexible, pay for the performance level you need | Can be difficult to configure, only terminal-based interface | Starts ~$1/hour | [Azure VM Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#2-setup-an-azure-virtual-machine) |
-| 3 | Your Own Linux GPU Machine | No recurring cost, complete control over hardware. | High up-front cost, takes time to configure. | $1000+ fixed up front cost | [Linux Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#3-setup-on-your-own-gpu-machine-running-linux) |
-
+| 2 | Your Own Linux GPU Machine | No recurring cost, complete control over hardware. | High up-front cost, takes time to configure. | $1000+ fixed up front cost | [Linux Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#2-setup-on-your-own-gpu-machine-running-linux) |
+| 3 | Virtual Machine | Highly configurable & flexible, pay for the performance level you need | Can be difficult to configure, only terminal-based interface | Starts ~$1/hour | [Azure VM Setup](https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020#3-setup-a-virtual-machine) |
 
 ### 2.1 Setup Google Colab
+Google colab is delightfully easy to setup. All you really need to is a google account. Clicking one of the "Open in Colab" links above should take you directly to that notebook in google colab, ready to run. The only configuration change you'll be required to make is **changing your runtime type**. Simply click the runtime menu dropdown at the top of your notebook, select "change runtime type", and select "GPU" as your hardware accelerator. 
+
+### 2.2 Setup on Your Own GPU Machine Running Linux
+After doing this for a while, my preferred configuration is training models on my own Linux GPU machine. This can require some up front investment, but if you're going to be training a lot of models, having your own machine really makes your life easier. 
+
+2.2.1 Install [Anaconda Python](https://www.anaconda.com/products/individual)
+
+2.2.2 Clone this repository
+```
+git clone https://github.com/stephencwelch/dsgo-dl-workshop-summer-2020
+
+```
+
+2.2.3 (Optional) Create conda environment
+```
+conda create -n dsgo-cv python=3.7
+conda activate dsgo-cv
+```
+
+2.2.4 Install packages
+```
+cd dsgo-dl-workshop-summer-2020
+pip install -r requirements.txt
+```
+
+2.2.5 Launch Jupyter
+```
+jupyter notebook
+```
 
 
-### 2.2 Setup an Azure Virtual Machine
-
-
-### 2.3 Setup on Your Own GPU Machine Running Linux
+### 2.2 Setup a Virtual Machine
 
 
 ## 3. Storytime - the summer project that took 50 years
@@ -104,10 +129,19 @@ python util/get_and_unpack.py -url http://www.welchlabs.io/unccv/deep_learning/b
 - [Learning to See](https://www.youtube.com/watch?v=i8D90DkCLhI)
 - [Great Book on the History of AI](https://www.amazon.com/Ai-Tumultuous-History-Artificial-Intelligence/dp/0465029973)
 
-## 4. Getting image classification results fast with fastai
+## 4-6 Model Training
+Instructions for sections 4-6 are contained inside of the image classification, bounding box detection, and semantic segmentation notebooks. You ran quickly run these notebooks in google colab using the links above, or you can run the notebooks on your own machine by launching your own notebook server:
 
+```
+cd dsgo-dl-workshop-summer-2020
+jupyter notebook
+```
 
-## 6. Deploying models with docker and flask
+## 7. Deploying models with docker and render
+Alright, enough training, let's get something into production!
+
+If you haven't yet cloned this respoistory, please
+
 
 ```
 python app/server.py serve
